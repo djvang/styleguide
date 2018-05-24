@@ -1,0 +1,55 @@
+.button {
+  margin: 0;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+  border-radius: 0;
+  overflow: visible;
+  font: inherit;
+  text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 6px 14px;
+  font-size: 14px;
+  min-height: 38px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #222;
+  border: 1px solid #e5e5e5
+}
+
+.button:not(:disabled) {
+  cursor: pointer
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+.button:hover,
+.button:focus {
+  text-decoration: none;
+  background-color: transparent;
+  color: #222;
+  border-color: #b2b2b2
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active,
+.button.is-active {
+  background-color: transparent;
+  color: #222;
+  border-color: #999
+}
+
+.button:disabled {
+  pointer-events: none;
+  opacity: .45;
+}
